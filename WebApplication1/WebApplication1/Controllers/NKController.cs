@@ -26,7 +26,22 @@ namespace WebApplication1.Controllers
             _config = config;
         }
 
-
+        /// <summary>
+        /// 會員登入判斷
+        /// </summary>
+        /// <response code="S001">登入成功</response>
+        /// <response code="E001">查無資料</response>
+        /// <response code="E002"></response>
+        /// <response code="E003">未知錯誤</response>
+        ///  <remarks>
+        /// Sample request:
+        ///
+        ///     {
+        ///        "UserID":"1111",
+        ///        "UserPwd":"1111"
+        ///     }
+        ///
+        /// </remarks>
 
         [HttpPost("Login")]
         public Result Login([FromBody]  Employee employee)

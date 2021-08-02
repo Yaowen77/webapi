@@ -19,6 +19,16 @@ namespace WebApplication1.Models
     
         }
 
+        #region 寫入call api Log
+        /// <summary>
+        /// 寫入call api Log
+        /// </summary>
+        /// <param name="nkdata">傳入之型別</param>
+        /// <param name="strParaPasscode">傳入之型別</param>
+        /// <param name="strParaPassmsg">傳入之型別</param>
+        /// <param name="connectionString">傳入之型別</param>
+        /// <returns></returns>
+
         public bool Insert_Callnkapi_Log(NkData nkdata, string strParaPasscode, string strParaPassmsg, string connectionString)
         {
             bool result = false;
@@ -50,8 +60,15 @@ namespace WebApplication1.Models
 
             return result;
         }
+        #endregion
 
-
+        #region 取得公司別
+        /// <summary>
+        /// 取得公司別
+        /// </summary>
+        /// <param name="CompanyID">傳入之型別</param>
+        /// <param name="connectionString">傳入之型別</param>
+        /// <returns></returns>
         public Result Get_Company(string CompanyID,string connectionString)
         {
             Result result = new Result();
@@ -115,5 +132,6 @@ namespace WebApplication1.Models
                 return result;
             }      
         }
+        #endregion
     }
 }

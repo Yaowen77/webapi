@@ -9,19 +9,32 @@ namespace WebApplication1.Models
 {
     public class Employee
     {
+        /// <summary>
+        /// 帳號
+        /// </summary>
         [Required]
         [Display(Name = "帳號")]
-        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 4)]
+        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 1)]
         public string UserID { get; set; }
 
+
+        /// <summary>
+        /// 密碼
+        /// </summary>
         [Required]
         [Display(Name = "密碼")]
-        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 4)]
+        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 1)]
         [DataType(DataType.Password)]
         public string UserPwd { get; set; }
 
 
-
+        #region 密碼加密邏輯
+        /// <summary>
+        /// 密碼加密邏輯
+        /// </summary>
+        /// <param name="Code">密碼</param>
+        /// <param name="Length">密碼長度</param>
+        /// <returns>加密後密碼</returns>
         public string Encoded(string Code, int Length = 32)
           {
               string temp = "", PassWD = "", newcode1 = "", newcode2 = "", ReturnCode = "";
@@ -77,13 +90,22 @@ namespace WebApplication1.Models
               }
               return ReturnCode.Substring(0, Length);
           }
-        
+        #endregion
+
         public Employee()
         {
 
 
         }
 
+        #region 判斷該員工可否登入
+        /// <summary>
+        /// 判斷該員工可否登入
+        /// </summary>
+        /// <param name="userID">傳入帳號</param>
+        /// <param name="receivePassword">傳入密碼</param>
+        /// <param name="connectionString">傳入DB連線字串</param>
+        ///  <returns>是否可登入</returns>
         public Result LoginAccount(string userID, string receivePassword, string connectionString)
         {
 
@@ -135,5 +157,6 @@ namespace WebApplication1.Models
         }
 
     }
+    #endregion
 
 }
