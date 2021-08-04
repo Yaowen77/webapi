@@ -11,18 +11,16 @@ namespace WebApplication1.Models
         /// <summary>
         /// 會員編號
         /// </summary>
-        [Required]
         [Display(Name = "會員編號")]
-        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 1)]
+        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 0)]
         public string MemberId { get; set; }
 
 
         /// <summary>
         /// 會員姓名
         /// </summary>
-        [Required]
         [Display(Name = "會員姓名")]
-        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 1)]
+        [StringLength(10, ErrorMessage = "{0}的長度至少必須為{2}的字元。", MinimumLength = 0)]
         public string MemberName { get; set; }
 
 

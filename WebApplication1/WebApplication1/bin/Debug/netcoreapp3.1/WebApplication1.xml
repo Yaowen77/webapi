@@ -34,6 +34,10 @@
             <response code="E002">不在效期內</response>
             <response code="E003">未知錯誤</response>
              <remarks>
+              {
+                   "MemberId": "1111",	
+                   "MemberName": "11111",
+                }
              </remarks>
         </member>
         <member name="P:WebApplication1.Models.Employee.UserID">

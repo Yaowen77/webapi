@@ -7,7 +7,6 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication1.Models;
-using static WebApplication1.Models.Result;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -116,14 +115,18 @@ namespace WebApplication1.Controllers
         ///     }
         ///  </remarks>
         [HttpPost("GetMember")]
-        public Result GetMember([FromBody] Member member)
+        public Result2<MemberData> GetMember([FromBody] Member member)
         {
 
-
+            
 
             var Config = new Config();
             Config.connectionString = _config.GetValue<string>("connectionString");
-            Result result = new Result();
+
+
+            Result2<MemberData> result = new Result2<MemberData>();
+
+
 
 
             if (!String.IsNullOrEmpty(member.MemberId) && !String.IsNullOrEmpty(member.MemberName))
@@ -152,7 +155,7 @@ namespace WebApplication1.Controllers
 
                         if (!String.IsNullOrEmpty(member.MemberName))
                         {
-                            command.CommandText += " And memberid like @MemberName ";
+                            command.CommandText += " And MemberName like @MemberName ";
                             command.Parameters.AddWithValue("@MemberName", "%" + member.MemberName);
                         }
 
@@ -170,7 +173,6 @@ namespace WebApplication1.Controllers
                                 while (reader.Read())
                                 {
              
-
                                     result.Data.Add(new MemberData() { 
                                     
                                         MemberId = (reader.IsDBNull(reader.GetOrdinal("MemberId"))) ? "" : (string)reader["MemberId"],
@@ -178,7 +180,10 @@ namespace WebApplication1.Controllers
                                     });
    
                                 }
-                              
+
+                               // result.Data.OrderBy(x => x.MemberId);
+
+
                                 return result;
                             }
                             else
