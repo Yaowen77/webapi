@@ -4,24 +4,7 @@
         <name>WebApplication1</name>
     </assembly>
     <members>
-        <member name="M:WebApplication1.Controllers.NKController.Login(WebApplication1.Models.Employee)">
-             <summary>
-             會員登入判斷
-             </summary>
-             <response code="S001">登入成功</response>
-             <response code="E001">查無資料</response>
-             <response code="E002"></response>
-             <response code="E003">未知錯誤</response>
-              <remarks>
-             Sample request:
-            
-                 {
-                    "UserID":"1111",
-                    "UserPwd":"1111"
-                 }
-            
-             </remarks>
-        </member>
+        <!-- Badly formed XML comment ignored for member "M:WebApplication1.Controllers.NKController.Login(WebApplication1.Models.Employee)" -->
         <member name="M:WebApplication1.Controllers.NKController.GetPeriodCompany(WebApplication1.Models.NkData)">
              <summary>
              判斷公司效期
@@ -40,6 +23,17 @@
                     "EmployeeID": "1111"
                  }
             
+             </remarks>
+        </member>
+        <member name="M:WebApplication1.Controllers.NKController.GetMember(WebApplication1.Models.Member)">
+            <summary>
+            查詢會員資料
+            </summary>
+            <response code="S001">查詢成功</response>
+            <response code="E001">查無資料</response>
+            <response code="E002">不在效期內</response>
+            <response code="E003">未知錯誤</response>
+             <remarks>
              </remarks>
         </member>
         <member name="P:WebApplication1.Models.Employee.UserID">
@@ -68,6 +62,16 @@
             <param name="receivePassword">傳入密碼</param>
             <param name="connectionString">傳入DB連線字串</param>
              <returns>是否可登入</returns>
+        </member>
+        <member name="P:WebApplication1.Models.Member.MemberId">
+            <summary>
+            會員編號
+            </summary>
+        </member>
+        <member name="P:WebApplication1.Models.Member.MemberName">
+            <summary>
+            會員姓名
+            </summary>
         </member>
         <member name="M:WebApplication1.Models.NK.Insert_Callnkapi_Log(WebApplication1.Models.NkData,System.String,System.String,System.String)">
             <summary>

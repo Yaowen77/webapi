@@ -11,6 +11,13 @@ namespace WebApplication1.Models
         public string Message { get; set; }
 
         public string Stauts { get; set; }
+        public List<MemberData> Data { get; set; } = new List<MemberData>();
+
+        public class MemberData
+        {
+            public string MemberId { get; set; }
+            public string MemberName { get; set; }
+        }
 
     }
 }
