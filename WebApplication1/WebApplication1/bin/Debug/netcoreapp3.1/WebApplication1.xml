@@ -25,6 +25,21 @@
             
              </remarks>
         </member>
+        <member name="M:WebApplication1.Controllers.NKController.PutMember(System.String,System.String)">
+            <summary>
+            修改會員名稱
+            </summary>
+            <response code="S001">修改成功</response>
+            <response code="E001">查無資料</response>
+            <response code="E002">會員資料不可為空白</response>
+            <response code="E003">未知錯誤</response>
+             <remarks>
+              
+              "MemberId": "1111",	
+              "MemberName": "11111",
+               
+             </remarks>
+        </member>
         <member name="M:WebApplication1.Controllers.NKController.GetMember(WebApplication1.Models.Member)">
             <summary>
             查詢會員資料
