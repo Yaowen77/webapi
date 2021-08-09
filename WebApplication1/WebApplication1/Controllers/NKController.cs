@@ -12,13 +12,15 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-
-
-
+   
     [Route("api/[controller]")]
     [ApiController]
     public class NKController : ControllerBase
     {
+
+
+
+        Models.Repositories.IInterface MyDB = new Models.Repositories.MyInterface();
 
 
         private IConfiguration _config;
@@ -120,54 +122,56 @@ namespace WebApplication1.Controllers
 
             var Config = new Config();
             Config.connectionString = _config.GetValue<string>("connectionString");
-            Result result = new Result();
+            var result = MyDB.PutMember( memberId,  memmberName, Config.connectionString);
+            return result;
+            /* Result result = new Result();
 
-            if (String.IsNullOrEmpty(memberId) && String.IsNullOrEmpty(memmberName))
-            {
-                result.Code = "E001";
-                result.Message = "查無資料";
-                result.Stauts = "失敗";
-                return result;
-            }
+             if (String.IsNullOrEmpty(memberId) && String.IsNullOrEmpty(memmberName))
+             {
+                 result.Code = "E001";
+                 result.Message = "查無資料";
+                 result.Stauts = "失敗";
+                 return result;
+             }
 
-            if (String.IsNullOrEmpty(memberId))
-            {
-                result.Code = "E002";
-                result.Message = "會員資料不可為空白";
-                result.Stauts = "失敗";
-                return result;
-            }
+             if (String.IsNullOrEmpty(memberId))
+             {
+                 result.Code = "E002";
+                 result.Message = "會員資料不可為空白";
+                 result.Stauts = "失敗";
+                 return result;
+             }
 
-            try
-            {
-                using (var conn = new MySqlConnection(Config.connectionString))
-            {
-                conn.Open();
+             try
+             {
+                 using (var conn = new MySqlConnection(Config.connectionString))
+             {
+                 conn.Open();
 
-                    using (var command = conn.CreateCommand())
-                    {
+                     using (var command = conn.CreateCommand())
+                     {
 
-                        command.CommandText = "Update Member Set MemberName =@MemberName Where MemberID = @MemberID";
-                        command.Parameters.AddWithValue("@MemberName", memmberName);
-                        command.Parameters.AddWithValue("@MemberID", memberId);
-                        command.ExecuteNonQuery();
+                         command.CommandText = "Update Member Set MemberName =@MemberName Where MemberID = @MemberID";
+                         command.Parameters.AddWithValue("@MemberName", memmberName);
+                         command.Parameters.AddWithValue("@MemberID", memberId);
+                         command.ExecuteNonQuery();
 
 
-                        result.Code = "S001";
-                        result.Message = "修改成功";
-                        result.Stauts = "成功";
-                        return result;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                result.Code = "E003";
-                result.Message = ex.Message;
-                result.Stauts = "未知錯誤";
-                return result;
-            }
-            
+                         result.Code = "S001";
+                         result.Message = "修改成功";
+                         result.Stauts = "成功";
+                         return result;
+                     }
+                 }
+             }
+             catch (Exception ex)
+             {
+                 result.Code = "E003";
+                 result.Message = ex.Message;
+                 result.Stauts = "未知錯誤";
+                 return result;
+             }*/
+
         }
         #endregion
 
