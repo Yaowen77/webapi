@@ -3,9 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>87b73ccf-d8b2-438d-a5fd-736556c356a9</UserSecretsId>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\work\nkapi2\WebApplication1\WebApplication1\WebApplication1.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DocumentationFile>D:\work\nkapi2\WebApplication1\WebApplication1\WebApplication1.xml</DocumentationFile>
   </PropertyGroup>
 

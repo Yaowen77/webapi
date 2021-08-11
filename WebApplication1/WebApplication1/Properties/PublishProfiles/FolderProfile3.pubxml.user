@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\nkapi</_PublishTargetUrl>
+    <History>True|2021-08-10T06:07:29.0887459Z;True|2021-08-10T14:02:12.1147459+08:00;True|2021-08-10T13:58:31.2877459+08:00;True|2021-08-10T12:17:01.9997459+08:00;False|2021-08-10T12:15:30.1177459+08:00;True|2021-08-10T12:12:48.3497459+08:00;False|2021-08-10T12:12:26.1467459+08:00;True|2021-08-10T12:11:16.4957459+08:00;</History>
+  </PropertyGroup>
+</Project>

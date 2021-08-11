@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:WebApplication1.Controllers.NKController.Login(WebApplication1.Models.Employee)" -->
+        <member name="M:WebApplication1.Controllers.NKController.GetPeriodCompany(WebApplication1.Models.NkData)">
+             <summary>
+             判斷公司效期
+             </summary>
+             <response code="S001">查詢成功</response>
+             <response code="E001">查無資料</response>
+             <response code="E002">不在效期內</response>
+             <response code="E003">未知錯誤</response>
+              <remarks>
+             Sample request:
+            
+                 {
+                    "CompanyID": "0001",	
+                    "StoreID": "01",
+                    "MachineNo":"01",
+                    "EmployeeID": "1111"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:WebApplication1.Controllers.NKController.PutMember(System.String,System.String)">
+            <summary>
+            修改會員名稱
+            </summary>
+            <response code="S001">修改成功</response>
+            <response code="E001">查無資料</response>
+            <response code="E002">會員資料不可為空白</response>
+            <response code="E003">未知錯誤</response>
+             <remarks>
+              
+              "MemberId": "1111",	
+              "MemberName": "11111",
+               
+             </remarks>
+        </member>
+        <member name="M:WebApplication1.Controllers.NKController.GetMember(WebApplication1.Models.Member)">
+            <summary>
+            查詢會員資料
+            </summary>
+            <response code="S001">查詢成功</response>
+            <response code="E001">查無資料</response>
+            <response code="E002">不在效期內</response>
+            <response code="E003">未知錯誤</response>
+             <remarks>
+              {
+                   "MemberId": "1111",	
+                   "MemberName": "11111",
+                }
+             </remarks>
+        </member>
+        <member name="P:WebApplication1.Models.Employee.UserID">
+            <summary>
+            帳號
+            </summary>
+        </member>
+        <member name="P:WebApplication1.Models.Employee.UserPwd">
+            <summary>
+            密碼
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Models.Employee.Encoded(System.String,System.Int32)">
+            <summary>
+            密碼加密邏輯
+            </summary>
+            <param name="Code">密碼</param>
+            <param name="Length">密碼長度</param>
+            <returns>加密後密碼</returns>
+        </member>
+        <member name="M:WebApplication1.Models.Employee.LoginAccount(System.String,System.String,System.String)">
+            <summary>
+            判斷該員工可否登入
+            </summary>
+            <param name="userID">傳入帳號</param>
+            <param name="receivePassword">傳入密碼</param>
+            <param name="connectionString">傳入DB連線字串</param>
+             <returns>是否可登入</returns>
+        </member>
+        <member name="P:WebApplication1.Models.Member.MemberId">
+            <summary>
+            會員編號
+            </summary>
+        </member>
+        <member name="P:WebApplication1.Models.Member.MemberName">
+            <summary>
+            會員姓名
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Models.NK.Insert_Callnkapi_Log(WebApplication1.Models.NkData,System.String,System.String,System.String)">
+            <summary>
+            寫入call api Log
+            </summary>
+            <param name="nkdata">傳入之型別</param>
+            <param name="strParaPasscode">傳入之型別</param>
+            <param name="strParaPassmsg">傳入之型別</param>
+            <param name="connectionString">傳入之型別</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication1.Models.NK.Get_Company(System.String,System.String)">
+            <summary>
+            取得公司別
+            </summary>
+            <param name="CompanyID">傳入之型別</param>
+            <param name="connectionString">傳入之型別</param>
+            <returns></returns>
+        </member>
+        <member name="P:WebApplication1.Models.NkData.CompanyID">
+            <summary>
+            公司代碼
+            </summary>
+        </member>
+        <member name="P:WebApplication1.Models.NkData.StoreID">
+            <summary>
+            門市代碼
+            </summary>
+        </member>
+        <member name="P:WebApplication1.Models.NkData.MachineNo">
+            <summary>
+            機台代碼
+            </summary>
+        </member>
+        <member name="P:WebApplication1.Models.NkData.EmployeeID">
+            <summary>
+            員工代碼
+            </summary>
+        </member>
+    </members>
+</doc>
