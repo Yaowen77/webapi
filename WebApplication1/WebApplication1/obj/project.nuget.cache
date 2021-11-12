@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "YDn+Sv3F6BgAgq93P7aG0DtD8rxW1XuV0XtXEG2J84ZtKfEdw9mgj04b6+Zdr+wHhkG1LMoU286PYCbVSdgcLg==",
+=======
+  "dgSpecHash": "/DACDC3ZwwgcqFGQSCVkA9dz03Ppj19glM80i3rmjuNW62eoQxd7VVYS7fDDRr02hOQDLfhQpoZvTW0D9XtaYw==",
+>>>>>>> 6f7f9228e67d7364c500925d6140dfe41ddf3547
   "success": true,
   "projectFilePath": "D:\\Frontend_Space\\ChuuKa\\webapi\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [

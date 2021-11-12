@@ -10,7 +10,11 @@
         "projectUniqueName": "D:\\Frontend_Space\\ChuuKa\\webapi\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
         "projectPath": "D:\\Frontend_Space\\ChuuKa\\webapi\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+<<<<<<< HEAD
         "packagesPath": "C:\\Users\\yenight\\.nuget\\packages\\",
+=======
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+>>>>>>> 6f7f9228e67d7364c500925d6140dfe41ddf3547
         "outputPath": "D:\\Frontend_Space\\ChuuKa\\webapi\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [

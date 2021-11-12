@@ -37,8 +37,11 @@ D:\work\nkapi2\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplic
 D:\work\nkapi2\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.xml
 D:\work\nkapi2\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 D:\work\nkapi2\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
+<<<<<<< HEAD
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
+=======
+>>>>>>> 6f7f9228e67d7364c500925d6140dfe41ddf3547
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\WebApplication1.exe
@@ -64,7 +67,10 @@ D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\bin\Debug\netcor
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+<<<<<<< HEAD
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
+=======
+>>>>>>> 6f7f9228e67d7364c500925d6140dfe41ddf3547
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
@@ -75,4 +81,11 @@ D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcor
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApplication1.styles.css
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorTargetAssemblyInfo.cache
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CopyComplete
+<<<<<<< HEAD
 D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+=======
+D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
+D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
+D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+D:\Frontend_Space\ChuuKa\webapi\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
+>>>>>>> 6f7f9228e67d7364c500925d6140dfe41ddf3547
